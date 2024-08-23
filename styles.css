@@ -1,0 +1,390 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 30px 0;
+    position: relative;
+    z-index: 1000;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34495e;
+    z-index: 1000;
+    padding-top: 10px;
+}
+
+nav ul ul li {
+    display: block;
+    white-space: nowrap;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul a {
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul ul a:hover {
+    background-color: #2c3e50;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 60px;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Estilo para o main */
+.conteudo_form {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: center;
+    flex: 1;
+}
+
+/* Estilo para o h1 */
+.conteudo_form h1 {
+    margin-bottom: 20px;
+    color: #2f4f6f;
+}
+
+/* Estilo para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para os rótulos */
+form label {
+    margin: 10px 0 5px;
+    color: #2f4f6f;
+    width: 100%;
+    text-align: left;
+}
+
+/* Estilo para os inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Estilo para o botão de submit */
+form input[type="submit"] {
+    background: #2f4f6f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 30%;
+}
+
+form input[type="submit"]:hover {
+    background: #3b5b83;
+}
+
+/* Estilo para a form-container */
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estilo para o h1 */
+.form-container h1 {
+    margin-bottom: 20px;
+    color: #2f4f6f;
+}
+
+/* Estilo para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para os rótulos */
+.form-row label {
+    margin: 10px 0 5px;
+    color: #2f4f6f;
+    width: 100%;
+    text-align: left;
+}
+
+/* Estilo para os inputs */
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="date"],
+.form-row input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Estilo para o botão de submit */
+.singUp button[type="submit"] {
+    background: #2f4f6f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.singUp button[type="submit"]:hover {
+    background: #3b5b83;
+}
+
+/* Estilo para a mensagem de sucesso */
+.mensagem-sucesso {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilo para o botão de voltar */
+.botao-alterar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#voltar-link {
+    display: inline-block;
+    background-color: #2f4f6f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+#voltar-link:hover {
+    background-color: #3b5b83;
+}
+
+/* Estilo para o main com classe table-geral */
+.table-geral {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estilo para o h1 */
+.table-geral h1 {
+    margin-bottom: 20px;
+    color: #2f4f6f;
+}
+
+/* Estilo para a tabela */
+.table-geral table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo para as células do cabeçalho */
+.table-geral th {
+    background-color: #2f4f6f;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilo para as células da tabela */
+.table-geral td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Estilo para os botões de deletar e alterar */
+.table-geral .botao-del,
+.table-geral .botao-alt{
+    background-color: #2f4f6f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.table-geral .botao-alt {
+    background-color: #3498db; 
+}
+
+.table-geral .botao-del:hover,
+.table-geral .botao-alt:hover {
+    background-color: #c0392b; 
+}
+
+/* Estilo para os formulários dentro das células */
+.table-geral form {
+    margin: 0;
+}
+
+/* Estilo para o espaço entre as linhas da tabela */
+.table-geral tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.mensagem-sucesso {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+}
+
+#voltar-link {
+    display: inline-block;
+    background-color: #2f4f6f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+#voltar-link:hover {
+    background-color: #3b5b83;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
