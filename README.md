@@ -27,7 +27,7 @@ Este projeto foi desenvolvido como **projeto acadêmico**, atividade **avaliativ
 * 🥼 Cadastro de médicos com informações profissionais.
 * 📝 Gerenciamento de Estoque.
 * 🗄️ Armazenamento e manipulação de dados via **MySQL**.
-* 🔄 Funcionalidades **CRUD** para clientes, funcionários e produtos:
+* 🔄 Funcionalidades **CRUD** para pacientes, médicos, funcionários, produtos e estoque:
   * **Listar** registros cadastrados.
   * **Editar** informações existentes.
   * **Deletar** registros indesejados.
